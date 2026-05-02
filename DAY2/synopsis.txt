@@ -1,0 +1,114 @@
+//DAY 1 
+==========================================
+// how to do declaration
+let a = 5;
+let name = "jp" ;
+// print out statement
+console.log( a, name)
+
+// execution in terminal 
+cd Directory 
+cd file name 
+cd node  class.js
+
+//  about github
+cd Directory name
+
+git config --global User.mail Id
+git config--global User.name
+git init 
+git add .
+git status 
+git commit -m "xyz"
+git push origin master 
+
+ // String operations ---->let str = "Hello" --->
+  console.log("String:", str);   
+("Length of string:", str.length);
+("Uppercase:", str.toUpperCase());
+("Lowercase:", str.toLowerCase());
+("Substring (0-5):", str.substring(0, 5));
+
+// Logical operations------>
+// Mathematical operations------>
+===============================================================================================================================
+//USAGE OF OBJECT
+let obj = {
+    name: "suri babu",
+    age: 30,
+    city: "TEXAS"
+}
+console.log("Object:", obj);
+console.log("Name:", obj.name);
+console.log("Age:", obj.age);
+console.log("City:", obj.city);
+
+===============================================================================================================================
+
+//// DAY2 //
+
+ DIFFERENCE BETWEEN ==/===
+== (Loose Equality): Checks value only, ignoring the data type.
+
+=== (Strict Equality): Checks both the value and the data type.
+
+ 
+
+// // template literals ----> BENIFIT IS BECAUSE IT IS EASY TO READY AND WRITTEN EVEN MORE CLEAN WITH LESS LINES
+let d=" hello " +  a  +","+ b +" and "+c+"!"; ----> INSTEAD OF THS 
+let e = `hello ${b} , ${a} and ${c} !`;-----------> IT CAN BE WRITTEN SHORT AND CLEAR WITH USE OF TEMPLATE LITERALS
+
+
+
+//Arrow Functions--------->EASY TO READ&CLEAN // INPUT  IS CALLED  SIGNATURE  AND => LOGIC CONTAINS PARAMETERS CONTAINS ACTION
+let sum = (a,b) => a + b;
+console.log("Sum of 10 and 20:",sum(10,20));
+
+
+==========================================================
+LOOPS
+--------------------------
+let arr = [1, 2, 3 ,JP];
+// forEach loop
+arr.forEach(x => console.log(x));
+
+=====================================================================================
+
+ARRAY METHODS
+---------------
+// filter → select elements
+arr.filter(x => x > 1);
+arr.filter(x =>  type of x === 'string');
+
+// map → modify elements
+
+let arr = [1,2,3,4];
+let doubled = arr.map(x => x * 5);
+
+=========================================================================================================
+//math.floor/random
+
+console.log(Math.floor(Math.random() * 100) + 1); // 1 to 100
+-->floor -> rounds down to the nearest integer 0.9 --> 0
+-->random ->  is a built-in function that generates a random decimal number between 0 (inclusive) and 1 (exclusive)
+
+==============================================================================================================
+// parseFloat/parseInt
+let val = "0.6";
+console.log(parseInt(val)); // 0  ------------> The Integer Maker
+console.log(parseFloat(val)); // 0.6 ---------->The Decimal Maker
+
+===============================================================================================================
+
+// ARRAY OPERATIONS
+
+let colors = ["red", "blue"];
+
+colors.push("green");    // ----------------->add end
+colors.pop();            // ----------------->remove end
+colors.unshift("black"); //------------------> adds in starting of list
+colors.shift();          //-------------------------> remove starting of the list
+
+ //SEARCH
+colors.includes("red"); // true
+colors.indexOf("blue"); // index value
