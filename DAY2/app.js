@@ -5,7 +5,9 @@ const login = () => {
     if (username === "jp" && password === "123") {
         alert("Login successful!");
         window.location.href = "app.html";
-    } else {
+    } 
+    else 
+        {
         alert("Invalid username or password.");
     }
 }

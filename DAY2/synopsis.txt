@@ -112,3 +112,18 @@ colors.shift();          //-------------------------> remove starting of the lis
  //SEARCH
 colors.includes("red"); // true
 colors.indexOf("blue"); // index value
+
+================================================================
+#Reduce Function:
+arr.reduce((acc,curr) =>{ //operation},acc)
+
+===================================================================
+
+
+#DOM Manipulation:
+
+->Login-Form designing
+->how to link css to the html page   <head><link rel="stylesheet" href="file name.css"></head>
+-> how to connect javascript to html page <head><script src="app.js"></script></head>
+-> window.location.href = "app.html";
+  Navigating to other pages using "window.location.href = "page_name";"
