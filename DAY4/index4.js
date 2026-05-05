@@ -28,3 +28,5 @@ getData().then((data) => {
 }).catch((error) => {
     console.error("Error:", error);
 });
+
+ // fetching data from api
