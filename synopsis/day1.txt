@@ -1,0 +1,46 @@
+//DAY 1 
+==========================================
+// how to do declaration
+let a = 5;
+let name = "jp" ;
+// print out statement
+console.log( a, name)
+
+// execution in terminal 
+cd Directory 
+cd file name 
+cd node  class.js
+
+//  about github
+cd Directory name
+
+git config --global User.mail Id
+git config--global User.name
+git init 
+git add .
+git status 
+git commit -m "xyz"
+git push origin master 
+
+ // String operations ---->let str = "Hello" --->
+  console.log("String:", str);   
+("Length of string:", str.length);
+("Uppercase:", str.toUpperCase());
+("Lowercase:", str.toLowerCase());
+("Substring (0-5):", str.substring(0, 5));
+
+// Logical operations------>
+// Mathematical operations------>
+===============================================================================================================================
+//USAGE OF OBJECT
+let obj = {
+    name: "suri babu",
+    age: 30,
+    city: "TEXAS"
+}
+console.log("Object:", obj);
+console.log("Name:", obj.name);
+console.log("Age:", obj.age);
+console.log("City:", obj.city);
+
+===============================================================================================================================

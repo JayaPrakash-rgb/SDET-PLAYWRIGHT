@@ -1,0 +1,48 @@
+// setTimeout()
+
+->In JavaScript, the setTimeout() method is used to execute a piece of code or a function after a specified delay (in milliseconds)
+--> and it display only once
+
+---> setTimeout(()=>{console.log("Hello");},2000);
+---> delay: The time to wait in milliseconds (1000 ms = 1sec))
+
+//setinterval()
+
+--> executes a function repeatedly, with a fixed time delay.
+-->  /////   clearInterval() function is , which "kills" the loop.
+
+
+--->setInterval(()=>{
+    console.log("Data checking again and again");
+},5000);
+
+so here it will log for eavery 5 sec    untill we give clearinterval.
+
+// Asynchronous,promises
+
+promise --> (resolve, reject)
+  Pending   → Initial state
+  Fulfilled → Operation completed successfully  -----> resolve("Data received")
+  Rejected  → Operation failed------------------>  Rejected("error)
+ 
+
+// example 
+
+function getData() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Data received");
+        }, 2000);
+    });
+}
+ 
+getData().then((data) => {
+    console.log(data);
+}).catch((error) => {
+    console.error("Error:", error);
+});
+
+ --->HANDLING PROMISES
+ ---> .then() → Executes when Promise is fulfilled
+---> .catch() → Executes when Promise is rejected
+

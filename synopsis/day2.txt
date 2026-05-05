@@ -1,0 +1,82 @@
+//// DAY2 //
+
+ DIFFERENCE BETWEEN ==/===
+== (Loose Equality): Checks value only, ignoring the data type.
+
+=== (Strict Equality): Checks both the value and the data type.
+
+ 
+
+// // template literals ----> BENIFIT IS BECAUSE IT IS EASY TO READY AND WRITTEN EVEN MORE CLEAN WITH LESS LINES
+let d=" hello " +  a  +","+ b +" and "+c+"!"; ----> INSTEAD OF THS 
+let e = `hello ${b} , ${a} and ${c} !`;-----------> IT CAN BE WRITTEN SHORT AND CLEAR WITH USE OF TEMPLATE LITERALS
+
+
+
+//Arrow Functions--------->EASY TO READ&CLEAN // INPUT  IS CALLED  SIGNATURE  AND => LOGIC CONTAINS PARAMETERS CONTAINS ACTION
+let sum = (a,b) => a + b;
+console.log("Sum of 10 and 20:",sum(10,20));
+
+
+==========================================================
+LOOPS
+--------------------------
+let arr = [1, 2, 3 ,JP];
+// forEach loop
+arr.forEach(x => console.log(x));
+
+=====================================================================================
+
+ARRAY METHODS
+---------------
+// filter → select elements
+arr.filter(x => x > 1);
+arr.filter(x =>  type of x === 'string');
+
+// map → modify elements
+
+let arr = [1,2,3,4];
+let doubled = arr.map(x => x * 5);
+
+=========================================================================================================
+//math.floor/random
+
+console.log(Math.floor(Math.random() * 100) + 1); // 1 to 100
+-->floor -> rounds down to the nearest integer 0.9 --> 0
+-->random ->  is a built-in function that generates a random decimal number between 0 (inclusive) and 1 (exclusive)
+
+==============================================================================================================
+// parseFloat/parseInt
+let val = "0.6";
+console.log(parseInt(val)); // 0  ------------> The Integer Maker
+console.log(parseFloat(val)); // 0.6 ---------->The Decimal Maker
+
+===============================================================================================================
+
+// ARRAY OPERATIONS
+
+let colors = ["red", "blue"];
+
+colors.push("green");    // ----------------->add end
+colors.pop();            // ----------------->remove end
+colors.unshift("black"); //------------------> adds in starting of list
+colors.shift();          //-------------------------> remove starting of the list
+
+ //SEARCH
+colors.includes("red"); // true
+colors.indexOf("blue"); // index value
+
+================================================================
+#Reduce Function:
+arr.reduce((acc,curr) =>{ //operation},acc)
+
+===================================================================
+
+
+#DOM Manipulation:
+
+->Login-Form designing
+->how to link css to the html page   <head><link rel="stylesheet" href="file name.css"></head>
+-> how to connect javascript to html page <head><script src="app.js"></script></head>
+-> window.location.href = "app.html";
+  Navigating to other pages using "window.location.href = "page_name";"
