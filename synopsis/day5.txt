@@ -1,0 +1,59 @@
+--->async/await.
+
+->In JavaScript, async and await 
+are keywords used to handle "asynchronous" operations
+
+async/await
+
+-->it is used instead of (.then).
+--> It helps us to make code clean and it is good practice.
+
+-->The async Keyword -->It ensures the function always returns a Promise.(resolve/reject)
+-->the await keyword -->It can only be used inside an async function.
+-->It tells JavaScript: "Pause the execution of this function until the Promise is settled (resolved or rejected)."
+-->While the function is "paused," the rest of your application doesn't freeze
+
+example 
+//api->2
+ async function ap2() {
+  const res = await fetch("https://pokeapi.co/api/v2/pokemon?limit=20");
+  const obj = await res.json();
+  const names = obj.results.filter(p => p.name.startsWith("p")).map(p => p.name);
+  console.log(names);
+};
+ap2();
+=====================================================================================================================
+
+---> object to string (JSON.stringfy(obj))
+
+// console.log(JSON.stringify(obj)); // object -> string
+
+---> string to object (JSON.parse("string...."))
+
+// console.log(JSON.parse('{"name":"Aaryan","age":25,"city":"New York"}')); // string -> object
+======================================================================================================================
+//setinterval()
+
+--> executes a function repeatedly, with a fixed time delay.
+-->  /////   clearInterval() function is , which "kills" the loop.
+
+==================================================================================================================================
+
+OOPS["OBJECT ORIENTED PROGRAMMING SYSTEM]:
+
+---->OOPS
+1. Encapsulation -->IT HELPS TO  RESTRICT DIRECT ACCESS TO SOME OF THE COMPONENTS .
+                 --># IS USED TO CREATE PRIVATE FILEDS.
+
+
+2.Inheritance    -->IT HELPS TO ALLOW (CHILD) CLASS TO GET PROPERTIES AND METHODS FROM ANOTHER (PARENT) CLASS.
+                --> super() THIS FUNCTION USED TO CALL PARENT CONSTRUCTOR.
+                -->extends is used to extend one more class in main class.
+
+
+3.Polymorphism   -->IT ALLOWS CHILD CLASS to provide a specific implementation of a method that is already defined in its parent class.
+                -->Each object responds differently to the same call.
+
+
+4.Abstraction    -->Hiding complex implementation details and showing only the necessary features of an object.
+                 --># IS USED TO HIDE THE COMPLEX MECHANISMS.
