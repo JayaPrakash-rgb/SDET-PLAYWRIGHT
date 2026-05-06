@@ -54,4 +54,17 @@ fetch("https://jsonplaceholder.typicode.com/posts")
 fetch("https://restcountries.com/v3.1/all")
   .then(res => res.json())
   .then(data => console.log(data));
-  //api 6
+  
+//api 6
+const url = 'https://coronavirus.m.pipedream.net/';
+
+fetch(url)
+  .then(res => res.json())
+  .then(data => {
+    const deathsOnly = data.rawData
+      .map(item => parseInt(item.Deaths)) // Convert strings to numbers
+      .filter(deathCount => deathCount > 10000); 
+
+    console.log(deathsOnly);
+  })
+  .catch(err => console.error(err));
