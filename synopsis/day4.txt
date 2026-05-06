@@ -46,3 +46,20 @@ getData().then((data) => {
  ---> .then() → Executes when Promise is fulfilled
 ---> .catch() → Executes when Promise is rejected
 
+--> FETCH API
+ Used to make HTTP requests to external servers.
+   - Returns a Promise
+   - Used to retrieve real-world data
+
+   Example:
+   fetch("https://jsonplaceholder.typicode.com/todos")
+       .then(res => res.json())              ---------------> converting to str to json
+       .then(data => console.log(data));
+
+
+ARRAY METHODS ON API DATA
+-->Processing API data using functional methods.
+--> Methods
+   * filter() → select required data
+   * map() → transform data
+   
