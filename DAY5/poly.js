@@ -19,3 +19,4 @@ class Square extends Shape{
 const shapes = [new Circle(), new Square()];
 
 shapes.forEach(shape => shape.draw());
+

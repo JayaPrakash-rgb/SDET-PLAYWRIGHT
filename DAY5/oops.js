@@ -16,6 +16,7 @@ const cat = new Animal("Whiskers");
 dog.speak();
 cat.speak();
 
+// example -1
 
 class car{
     constructor( brand){
