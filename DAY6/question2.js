@@ -15,7 +15,7 @@ function applyPromo(cartArray, promoCallback) {                                 
   const updatedCart = cartArray.map(item => {
     if (promoCallback(item)) {
       const originalPrice = item.price;
-      const newPrice = originalPrice * 0.9; // Reduce by 10%
+      const newPrice = originalPrice * 0.10; // Reduce by 10%
       discountCount++;
       totalSavings += (originalPrice - newPrice);                                            //price transformation
 

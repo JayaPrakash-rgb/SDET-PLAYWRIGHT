@@ -13,7 +13,7 @@ Question 2: The E-Commerce Discount Applicator.
 ->Callbacks  and functions.
  ->applyPromo   (isEligible).
 ->.map()  to new arry without modifying original cart.
-->(* 0.9;) // Reduce by 10%  for transforming price.//discount.
+->(* 0.10;) // Reduce by 10%  for transforming price.//discount.
 -->   ...item)   for Used to copy all existing properties of a product before adding or updating the price and isDiscounted.
 ->//(Template Literal)  for  final log message.
 
