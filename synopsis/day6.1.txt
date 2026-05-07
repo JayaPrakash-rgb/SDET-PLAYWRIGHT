@@ -25,3 +25,15 @@ Question 3: The Movie Stream Analytics.
 ->Logical OR (||) and .filter()for  //Filtering: Action or Sci-Fi AND views > 5000.
 ->.sort((a, b) => b.views - a.views);         //Descending.
 ->  JSON.stringify Return as a JSON string .
+
+===============================================================================================================================================
+
+Question 4: The Automated Payroll Processor
+
+->Callback Function  // taxLogic()
+-> Tax Calculation  // salary * taxRate
+->  Ternary Operator  // condition ? value1 : value2
+->  map()  // Processes employee data.
+-> Template Literal  // `${total}`
+->  setTimeout()   // Waits 2000ms.
+->Spread Operator  // ...employee
