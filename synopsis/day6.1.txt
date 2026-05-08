@@ -37,3 +37,28 @@ Question 4: The Automated Payroll Processor
 -> Template Literal  // `${total}`
 ->  setTimeout()   // Waits 2000ms.
 ->Spread Operator  // ...employee
+
+=====================================================================================================================================
+-->Spread operator expands elements of array or object.
+
+--> Array Example
+// const arr1 = [1, 2];
+// const arr2 = [...arr1, 3, 4];
+
+// console.log(arr2);
+
+// Heap Memory
+// Definition --> Heap stores reference type data
+
+// Stored In Heap
+// Objects
+// Arrays
+// Functions
+
+---> Stack Memory
+// Definition -->Stack stores primitive data and function calls.
+// Works in LIFO order:
+// Last In First Out.
+
+--> Prototype
+ Definition --> Prototype is a mechanism in JavaScript that allows objects to inherit properties and methods from another object.
