@@ -97,7 +97,7 @@ let found =false;
 
  let n=`${k} ${l} ${m} `;
  console.log(n);
-
+//
  function table(num){
    for( let i=1 ; i<=10 ; i++)
    {

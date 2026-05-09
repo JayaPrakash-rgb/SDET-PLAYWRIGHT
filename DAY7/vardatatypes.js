@@ -68,10 +68,9 @@ switch (operator){
 }
 console.log(`${y} ${operator} ${z} = ${result}`);
 
+
 //5. Write a program that takes a user’s birth year and calculates age.
 let birthyear = 2004;
-
 let currentyear = new Date().getFullYear();
-
 let age = currentyear - birthyear;
 console.log(`if he/she born in ${birthyear} then ,now his/her age is : ${age} `);
