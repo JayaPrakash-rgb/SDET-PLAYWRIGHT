@@ -23,13 +23,15 @@ console.log(newnum);
 const obj={name:"prakash", age:25}
 const updatedObj = {...obj, city:"texas"};
 console.log(updatedObj);
+console.log()
 
+// rest parameters
 
 const cal = { // rest operator
-    sum: (...nums) => nums.reduce((a, b) => a + b, 0), // rest parameters
+    sum: (...nums) => nums.reduce((a, b) => a + b, 0), 
 }
-
 console.log(cal.sum(1, 2, 43, 4))
+console.log()
 
 // destructuring
 // const arr = ["Aryan", "Arush", "Vivek", "Rohit"];
@@ -38,10 +40,14 @@ console.log(cal.sum(1, 2, 43, 4))
 // const third = arr[2];
 // const fourth = arr[3];
 
-const [first, second, third, fourth, fifth] = ["Aryan", "Arush", "Vivek", "Rohit"]; // pos-based extraction
+// position-based extraction // destructuring 
+
+const [first, second, third, fourth, fifth] = ["Aryan", "Arush", "Vivek", "Rohit"]; 
 const [one, two, ...three] = [1, 3, 5, 6, 7];
 console.log(first, second, third, fourth, fifth);
 console.log(one, two, three)
+console.log()
 
-const { name, age } = {name: "aryan", age: 25}; // key-based extracted
+// key-based extracted
+const { name, age } = {name: "prakash", age: 22}; 
 console.log(name, age);
