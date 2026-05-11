@@ -13,6 +13,18 @@ console.log();
 
 
 
+//  Generic interface for a bag that can hold any type of content
+ interface Bag<T> {
+    content: T;
+}
+ const stringBag: Bag<string> = {content: "Apple"};
+ const numberBag: Bag<number> = {content: 5};
+
+ console.log(stringBag, numberBag);
+console.log();
+
+
+
  class Storage<T> {
     private items: T[] = [];
 
@@ -31,13 +43,18 @@ names.addItems("arun");
 console.log(names.getItem(0), names.getItem(1), names.getItem(2), names.getItem(3)); // undefined for index 3 because there is no data for index 3.
 console.log();
 
-//  Generic interface for a bag that can hold any type of content
- interface Bag<T> {
-    content: T;
+
+
+//
+interface HasLength {
+    length: number;
 }
- const stringBag: Bag<string> = {content: "Apple"};
- const numberBag: Bag<number> = {content: 5};
+ // generics with contraints | extends keyword
 
- console.log(stringBag, numberBag);
+function logLength<T extends HasLength>(arg: T): void {            // T -> property .length --> string, arrays
+    console.log(arg.length);
+}
 
-
+logLength("Aaryan"); // string --> length
+logLength([1, 2, 3]); // array --> length
+//logLength(10); // number --> X             // because here we given a number that which
