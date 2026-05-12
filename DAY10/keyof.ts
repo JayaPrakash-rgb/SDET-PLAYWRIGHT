@@ -22,5 +22,5 @@ function getUserProperty(u: user, key: UserKeys) {
   return u[key];
 }
 
-console.log(getUserProperty(newuser, "username")); // Output: "jaya prakash"
-console.log(getUserProperty(newuser, "id"));       // Output: 1
+console.log(getUserProperty(newuser, "username")); 
+console.log(getUserProperty(newuser, "id"));       
