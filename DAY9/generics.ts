@@ -58,3 +58,17 @@ function logLength<T extends HasLength>(arg: T): void {            // T -> prope
 logLength("Aaryan"); // string --> length
 logLength([1, 2, 3]); // array --> length
 //logLength(10); // number --> X             // because here we given a number that which
+console.log();
+
+
+
+// myprac
+interface long{
+    length:number;                                         //so that length property is obviously a number..  // if it is countable gets true
+}
+function haslong<T extends long>(arg :T) :void{
+    console.log("length of given : ",arg.length);              // here we give the logic that we wnat length 
+}
+haslong("abcdefghijklmnop");
+haslong([1,2,3,4,5,6,7]);
+haslong({ length: 50, name: "Box" });                   // if there is any property that define about length it returns the value.

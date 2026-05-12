@@ -4,7 +4,7 @@ const app = express();
 const PORT = 3000;
 
 app.get('/', (req, res) => { // GET Endpoint
-    res.json({ message: 'Hello World' });
+    res.json({ message: 'HELLO , HERE U R ' });
 });
 
 app.get('/:name', (req, res) => { // GET Endpoint
@@ -12,4 +12,5 @@ app.get('/:name', (req, res) => { // GET Endpoint
     res.json({ message: `Hello ${name}` });
 });
 
-app.listen(PORT, () => console.log(`App is running on PORT:${PORT}`))no
+app.listen(PORT, () => console.log(`App is running on PORT:${PORT}`))
+

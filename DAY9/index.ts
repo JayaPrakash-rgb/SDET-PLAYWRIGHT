@@ -22,3 +22,6 @@ console.log()
 let res: number | string ;
 res = "a"
 console.log(res);
+
+
+//

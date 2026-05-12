@@ -131,4 +131,3 @@ let result = val.map(x=>parseInt(x));                // parseInt value -> it ret
 let rel1 = val.map(x=>parseFloat(x));               // parseFloate vale -> it returns decimal value
 console.log(result);
 console.log(rel1);
-
